@@ -8,6 +8,7 @@
     --white: hsl(0, 0%, 100%);
    
     /* Spacing */
+    --spacing-1600: 8rem;   /* 128px */
     --spacing-1000: 5rem;   /* 80px */
     --spacing-500: 2.5rem;  /* 40px */
     --spacing-400: 2rem;    /* 32px */
@@ -160,9 +161,15 @@ body {
 }
 
 .attribution {
+    padding-top: var(--spacing-1000);
 }
 
 @media screen and (min-width: 768px) {
+
+    body {
+        padding: var(--spacing-1600) var(--spacing-100);
+    }
+
     .card {
         display: flex;
     }
